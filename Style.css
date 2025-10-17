@@ -101,34 +101,42 @@ h3 {
 #ComienzoAlejo .col-md-6 {
   text-align: left !important;
 }
- 
-#carouselExampleAutoplayingComienzosAlejoYSYA .carousel-inner {
-  width: 100%;
-  height: 500px;
-  overflow: hidden;
-  margin: auto;
-}
-
-
-.col-md-5 {
-  display: flex;
-  justify-content: center;
-}
-
-.carousel {
-  max-width: 100%;
-  text-align: center;
-}
-/* Carrusel Comienzos Alejo YSYA CENTRADO */
-
-
-
 
 
 #ComienzoAlejo h1,
 #ComienzoAlejo h2,
 #ComienzoAlejo p {
   text-align: left;
+}
+
+.LinkQuintoEscalon {
+  color: rgb(0, 0, 0);
+  text-decoration: underline rgb(255, 255, 255);
+}
+
+.LinkAntezana247 {
+  color: rgb(0, 0, 0);
+  text-decoration: underline rgb(0, 0, 0);
+}
+
+.LinkHechoAMano {
+  color: rgb(0, 0, 0);
+  text-decoration: underline rgb(0, 0, 0);
+}
+
+.LinkTrampaAlTiempo {
+  color: rgb(0, 0, 0);
+  text-decoration: underline rgb(0, 0, 0);
+}
+
+.LinkRadioClubHits {
+  color: rgb(0, 0, 0);
+  text-decoration: underline rgb(0, 0, 0);
+}
+
+.LinkTuDuoFavorito {
+  color: rgb(0, 0, 0);
+  text-decoration: underline rgb(0, 0, 0);
 }
 
 .carouselExampleAlbums .carousel-inner {
@@ -201,6 +209,27 @@ h3 {
 } 
 
 
+#ComienzoAlejo {
+  background-color: #30a54d;
+  text-align: left !important;
+  padding: 20px 0;
+}
+
+
+#ComienzoAlejo .carousel {
+  width: 100%;
+  max-width: 500px;   
+}
+
+#ComienzoAlejo img {
+  width: 100%;
+  height: auto;
+  max-height: 500px; 
+  object-fit: cover;  
+  border-radius: 10px;
+}
+
+
 #FinPagina {
   margin-top: auto;  
   height: 100%;
@@ -210,12 +239,14 @@ h3 {
   padding: 100px 0;
   width: 100%;
 }
-.TextoFinal {
+#TextoFinal {
   font-size: 18px;
   font-family: 'Times New Roman', Times, serif;
   text-decoration: underline white; 
 }
  
+
+
 .linkDuki {
   color: rgb(0, 0, 0);
   text-decoration: underline white
@@ -231,10 +262,6 @@ h3 {
   text-decoration: underline white
 }
 
-.LinkQuintoEscalon {
-  color: rgb(0, 0, 0);
-  text-decoration: underline white
-}
 
 .linkYSYA {
   color: rgb(0, 0, 0);
@@ -311,6 +338,22 @@ section {
 }
 
 
+#Gracias .Agradecimientos,
+#Gracias .Agradecimientos h1,
+#Gracias .Agradecimientos h2,
+#Gracias .Agradecimientos p,
+#Gracias .Agradecimientos ul {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: left !important;
+}
+
+
+#Gracias .Agradecimientos h2 {
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+
 @media (max-width: 768px) {
   .carousel-inner {
     width: 100%;
@@ -346,5 +389,45 @@ section {
   width: 100%;
   min-height: 100px;
   margin-top: auto;
+}
+
+
+#AlbumesYSYA .card {
+  overflow: hidden; 
+}
+#AlbumesYSYA .card-img-top {
+  transition: transform 0.4s ease, filter 0.4s ease;
+  display: block;
+  width: 100%;
+  height: auto;
+  transform-origin: center center;
+}
+#AlbumesYSYA .card:hover .card-img-top,
+#AlbumesYSYA .card:focus-within .card-img-top {
+  transform: scale(1.06);
+  filter: brightness(0.95);
+}
+
+
+@media (max-width: 576px) {
+  #AlbumesYSYA .card:hover .card-img-top {
+    transform: scale(1.02);
+  }
+}
+
+
+.map-responsive {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+.map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
